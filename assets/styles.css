@@ -9,16 +9,36 @@
   overflow: hidden;
   white-space: pre;
 }
-
-
-
-
-/* Animation */
-
 @keyframes typeWriter {
     from {
       width: 0%;
     } to {
       width: 100%;
     }
+}
+
+/*Boxes*/
+body {
+  display:flex;
+  justify-content: center;
+}
+.textBox {
+  display: flex;
+  align-items: baseline;
+  justify-content: left;
+  width: 25em;
+  height: 25em;
+  background-color: blue;
+}
+
+#input {
+  display: flex;
+  align-items: flex-end;
+  background-color: orange;
+}
+
+/*Text styles*/
+p {
+  font-size: 1.5em;
+  padding-left: 1em;
 }
