@@ -1,9 +1,13 @@
 /* Style Sheet */
 
-.reveal {
+.textBox {
+  display: flex;
+  justify-content: flex-start;
+}
+.textBox p {
   animation: typeWriter 5s steps(40, end);
   overflow: hidden;
-  white-space: nowrap;
+  white-space: pre;
 }
 
 
