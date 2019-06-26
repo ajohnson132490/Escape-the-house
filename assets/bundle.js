@@ -8,14 +8,13 @@ let key = false;
 let knife = false;
 let scissors = false;
 let screwdriver = false;
+
 let form = document.querySelector('form');
 form.addEventListener('submit', update)
 
-/*Initialize actions*/
-actions = ["n", "s", "e", "w", "ne", "nw", "se", "sw", "x"];
-
+var elmnt = document.querySelector("#description");
+elmnt.scrollIntoView();
 /*Act*/
-
 function update(event) {
   event.preventDefault();
   let form = event.target;
