@@ -121,7 +121,7 @@ function update(event) {
         case "x fridge":
           message.innerHTML += "<li>Your fridge is looking a little low.  All you have left to eat is celery and jelly.</li>";
           break;
-        case "x trashcan":
+        case "x trash":
           message.innerHTML += "<li>You walk over to your trashcan, and immediately regret it.  You resolve to take you trash out.  But not right now.</li>";
           break;
         case "x cabinets":
@@ -141,28 +141,23 @@ function update(event) {
   var elmnt = document.querySelector("#description");
   elmnt.scrollTo(0,10000);
 }
-
 function bedRoom() {
   room = 0;
-  message.innerHTML += "You enter your bedroom.  It's pretty plain.  In front of you is your bed, on your left there's your dresser, in the corner is a nightstand, and behind you is the door";
+  message.innerHTML += "You enter your bedroom.  It's pretty plain.  You see your bed, a dresser, and a nightstand.  But you like you bedroom, its got everything you need except for a minifridge.";
 }
-
 function bathRoom() {
   room = 1;
-  message.innerHTML += "<li>You walk into your bathroom.  In front of you is a freshly cleaned sink.  On you right, you see the toilet you just bought because of the incident last week...  Behind you is the door.</li>";
+  message.innerHTML += "<li>You walk into your bathroom.  In front of you is a freshly cleaned sink.  Next to it you see the toilet you just bought because of the incident last week...</li>";
 }
-
 function livingRoom() {
   room = 2;
-  message.innerHTML += "<li>You enter your living room.  It's a comfortable space with a tv in front of you, a couch behind you, and a trunk for your <strike>toys</strike> collectable action figures in the corner.  The bedroom is behind you to your right, the bathroom is behind you to your left.  Your office is on your right, kitchen on the left.  And the front door in sight!</li>"
+  message.innerHTML += "<li>You enter your living room.  It's a comfortable space with a tv, a couch, and a trunk for your <strike>toys</strike> collectable action figures.  The front door in sight!</li>"
 }
-
 function office() {
   room = 3;
-  message.innerHTML += "<li>You step into your office.  The only thing in here is your cluttered desk.  The door is behind you.</li>"
+  message.innerHTML += "<li>You step into your office.  The only thing in here is your cluttered desk.</li>"
 }
-
 function kitchen() {
   room = 4;
-  message.innerHTML += "<li>You enter your kitchen.  You see the fridge to your left, you cabinets to the right, and a trashcan in front of you.</li>"
+  message.innerHTML += "<li>You enter your kitchen.  You see the fridge, you cabinets, and a trash can.</li>"
 }
