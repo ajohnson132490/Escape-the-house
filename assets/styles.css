@@ -48,9 +48,12 @@ form {
 
 h1 {
   text-align: center;
+  width:fit-content;
 }
 
 header {
   background-color: #900C3F;
-  padding: .25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
