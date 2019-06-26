@@ -12,8 +12,6 @@ let screwdriver = false;
 let form = document.querySelector('form');
 form.addEventListener('submit', update)
 
-var elmnt = document.querySelector("#description");
-elmnt.scrollIntoView();
 /*Act*/
 function update(event) {
   event.preventDefault();
@@ -140,6 +138,8 @@ function update(event) {
       break;
   }
   form.reset();
+  var elmnt = document.querySelector("#description");
+  elmnt.scrollTo(0,10000);
 }
 
 function bedRoom() {
