@@ -1,11 +1,13 @@
 body {
-  background-color: rgba(88,24,69, 1);
+  background-image: url("https://freshome.com/wp-content/uploads/2018/01/living-room-intro.jpg");
+  background-size: cover;
   height: 100%;
   overflow: auto;
 }
 
 .textBox {
-  background-color: rgba(255,195,15, 0.6);
+  background-color: rgba(0,0,0, 0.6);
+  color: white;
   height: 100%;
   overflow: scroll;
 }
