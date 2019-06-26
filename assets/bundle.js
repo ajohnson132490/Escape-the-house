@@ -79,6 +79,10 @@ function update(event) {
           message.innerHTML += "<li>You're a very cautious person, so you have locks on both sides of your door.</li>"
           if (key==true) {message.innerHTML += "<li>You unlock the door and step outside.  The light breeze carries the scent of flowers, the sun beams happily, the neighbor says 'hi'.  You made it outside.  Life is good.</li>";}
           break;
+        case "s":
+          message.innerHTML += "<li>You're a very cautious person, so you have locks on both sides of your door.</li>"
+          if (key==true) {message.innerHTML += "<li>You unlock the door and step outside.  The light breeze carries the scent of flowers, the sun beams happily, the neighbor says 'hi'.  You made it outside.  Life is good.</li>";}
+          break;
         case "w":
           office();
           break;
