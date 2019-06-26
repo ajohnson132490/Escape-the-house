@@ -1,44 +1,46 @@
-/* Style Sheet */
-
-.textBox {
-  display: flex;
-  justify-content: flex-start;
-}
-.textBox p {
-  animation: typeWriter 5s steps(40, end);
-  overflow: hidden;
-  white-space: pre;
-}
-@keyframes typeWriter {
-    from {
-      width: 0%;
-    } to {
-      width: 100%;
-    }
+html {
+    overflow: hidden;
 }
 
-/*Boxes*/
 body {
-  display:flex;
-  justify-content: center;
-}
-.textBox {
-  display: flex;
-  align-items: baseline;
-  justify-content: left;
-  width: 25em;
-  height: 25em;
-  background-color: blue;
+  background-color: rgba(88,24,69, 1);
+  height: 100%;
+  overflow: auto;
 }
 
-#input {
+.textBox {
+  background-color: rgba(255,195,15, 0.6);
+  height: 34em;
+}
+
+p {
+  font-size: 1.25em;
+  padding: .25em;
+}
+
+button {
+  padding: .5em;
+  background-color: #900C3F;
+  margin: .5em;
+}
+
+input {
+  margin: .5em;
+  width: 80%;
+  padding: .5em;
+}
+
+form {
   display: flex;
   align-items: flex-end;
-  background-color: orange;
+  justify-content: center;
 }
 
-/*Text styles*/
-p {
-  font-size: 1.5em;
-  padding-left: 1em;
+h1 {
+  text-align: center;
+}
+
+header {
+  background-color: #900C3F;
+  padding: .25em;
 }
