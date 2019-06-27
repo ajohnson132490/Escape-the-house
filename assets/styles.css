@@ -3,6 +3,7 @@ body {
   background-size: cover;
   height: 100%;
   overflow: auto;
+  background-repeat: no-repeat;
 }
 
 .textBox {
@@ -18,7 +19,11 @@ body {
   overflow: scroll;
   height: 300px;
 }
-
+#avatar {
+  position: absolute;
+  margin-top: 5em;
+  width: 1em;
+}
 p {
   font-size: 1.25em;
   padding: .5em;
