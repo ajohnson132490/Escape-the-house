@@ -1,7 +1,7 @@
 /*Initialize House*/
 //             0           1            2           3         4
 //house = ["bedRoom", "bathRoom", "livingRoom", "Office", "Kitchen"];
-house = [0,1,2,3,4,5,6];
+house = [0,1,2,3,4];
 let room = 0;
 let message = document.querySelector('#description');
 let key = false;
@@ -10,8 +10,8 @@ let scissors = false;
 let screwdriver = false;
 
 let form = document.querySelector('form');
-form.addEventListener('submit', update)
-
+form.addEventListener('submit', update);
+let player = document.querySelector('#avatar');
 /*Act*/
 function update(event) {
   event.preventDefault();
@@ -147,21 +147,31 @@ function update(event) {
 }
 function bedRoom() {
   room = 0;
+  player.style.top = "2em";
+  player.style.left = "8.5em";
   message.innerHTML += "You enter your bedroom.  It's pretty plain.  You see your bed, a dresser, and a nightstand.  But you like you bedroom, its got everything you need except for a minifridge.";
 }
 function bathRoom() {
   room = 1;
+  player.style.top = "2em";
+  player.style.left = "13em";
   message.innerHTML += "<li>You walk into your bathroom.  In front of you is a freshly cleaned sink.  Next to it you see the toilet you just bought because of the incident last week...</li>";
 }
 function livingRoom() {
   room = 2;
+  player.style.top = "5.75em";
+  player.style.left = "10.75em";
   message.innerHTML += "<li>You enter your living room.  It's a comfortable space with a tv, a couch, and a trunk for your <strike>toys</strike> collectable action figures.  The front door in sight!</li>"
 }
 function office() {
   room = 3;
+  player.style.top = "6.25em";
+  player.style.left = "2.725em";
   message.innerHTML += "<li>You step into your office.  The only thing in here is your cluttered desk.</li>"
 }
 function kitchen() {
   room = 4;
+  player.style.top = "6.25em";
+  player.style.left = "17em";
   message.innerHTML += "<li>You enter your kitchen.  You see the fridge, you cabinets, and a trash can.</li>"
 }

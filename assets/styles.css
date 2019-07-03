@@ -21,7 +21,8 @@ body {
 }
 #avatar {
   position: absolute;
-  margin-top: 5em;
+  top: 2em;
+  left: 8.5em;
   width: 1em;
 }
 p {
