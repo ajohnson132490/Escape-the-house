@@ -20,7 +20,7 @@ body {
   height: 300px;
 }
 #avatar {
-  position: absolute;
+  position: fixed;
   top: 5%;
   left: 8.5%;
   width: 1em;
