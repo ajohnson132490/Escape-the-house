@@ -1,7 +1,9 @@
 body {
+  display: block;
   background-image: url("https://freshome.com/wp-content/uploads/2018/01/living-room-intro.jpg");
   background-size: cover;
   height: 100%;
+  width: 90%;
   overflow: auto;
   background-repeat: no-repeat;
 }
@@ -20,9 +22,9 @@ body {
   height: 300px;
 }
 #avatar {
-  position: relative;
-  top: 2.5em;
-  left: 8em;
+  position: absolute;
+  top: 5%;
+  left: 8.5%;
   width: 1em;
 }
 p {
