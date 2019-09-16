@@ -147,31 +147,31 @@ function update(event) {
 }
 function bedRoom() {
   room = 0;
-  player.style.top = "2em";
-  player.style.left = "8.5em";
+  player.style.top = "5%";
+  player.style.left = "8.5%";
   message.innerHTML += "You enter your bedroom.  It's pretty plain.  You see your bed, a dresser, and a nightstand.  But you like you bedroom, its got everything you need except for a minifridge.";
 }
 function bathRoom() {
   room = 1;
-  player.style.top = "2em";
-  player.style.left = "13em";
+  player.style.top = "4.8%";
+  player.style.left = "14.5%";
   message.innerHTML += "<li>You walk into your bathroom.  In front of you is a freshly cleaned sink.  Next to it you see the toilet you just bought because of the incident last week...</li>";
 }
 function livingRoom() {
   room = 2;
-  player.style.top = "5.75em";
-  player.style.left = "10.75em";
+  player.style.top = "14%";
+  player.style.left = "12%";
   message.innerHTML += "<li>You enter your living room.  It's a comfortable space with a tv, a couch, and a trunk for your <strike>toys</strike> collectable action figures.  The front door in sight!</li>"
 }
 function office() {
   room = 3;
-  player.style.top = "6.25em";
-  player.style.left = "2.725em";
+  player.style.top = "14%";
+  player.style.left = "5%";
   message.innerHTML += "<li>You step into your office.  The only thing in here is your cluttered desk.</li>"
 }
 function kitchen() {
   room = 4;
-  player.style.top = "6.25em";
-  player.style.left = "17em";
+  player.style.top = "15%";
+  player.style.left = "20%";
   message.innerHTML += "<li>You enter your kitchen.  You see the fridge, you cabinets, and a trash can.</li>"
 }
