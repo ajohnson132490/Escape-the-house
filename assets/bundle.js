@@ -25,13 +25,13 @@ function update(event) {
           break;
         case "x dresser":
           message.innerHTML += "<li>You open your dresser.  Wow!  There's clothes in here!</li>";
-          if (knife==true) {message.innerHTML += "<li>You decide you want a new pair of ripped jeans.  So you take out your knife and get to work.  You find a screwdriver!</li>"; screwdriver=true;}
+          if (knife==true) {message.innerHTML += "<li>You decide you want a new pair of ripped jeans.  So you take out your knife and get to work.  You find a screwdriver in the pant's left pocket!</li>"; screwdriver=true;}
           break;
         case "x bed":
           message.innerHTML += "<li>You lay down in your bed.  It's so comfy you almost never want to leave!</li>"
           break;
         case "x nightstand":
-          message.innerHTML += "<li>You look in the nightstand for something useful.  You find the banana you left for yourself last night.  Yum!</li>";
+          message.innerHTML += "<li>You look in the nightstand for something useful.  You find a banana you left for yourself last night.  Yum!</li>";
           break;
         case "s":
           livingRoom();
@@ -66,7 +66,7 @@ function update(event) {
           livingRoom();
           break;
         case "x trunk":
-          message.innerHTML += "<li>You look in the chest of action figures.  You take out batman to 'examine'.  You notice his batteries are dead, and something jingling inside.  You'll need something to open his battery pack.</li>";
+          message.innerHTML += "<li>You look in the trunk of action figures.  You take out batman to 'examine'.  You notice his batteries are dead, and something jingling inside.  You'll need something to open his battery pack.</li>";
           if (screwdriver==true) {message.innerHTML += "<li>You use the screwdriver to open his battery pack.  You wonder what you could have stored in there.  After muttering 'righty tighty, lefty loosey' a few times, you open Batman's battery pack and find a key!</li>"; key=true;}
           break;
         case "x couch":
@@ -76,7 +76,7 @@ function update(event) {
           message.innerHTML += "<li>You turn on the tv, but quickly turn it off because you're just not in the mood to watch The Bachelorette</li>";
           break;
         case "x door":
-          message.innerHTML += "<li>You're a very cautious person, so you have locks on both sides of your door.</li>"
+          message.innerHTML += "<li>You're a very cautious person, so you have locks on both sides of your door.  Better find a key.</li>"
           if (key==true) {message.innerHTML += "<li>You unlock the door and step outside.  The light breeze carries the scent of flowers, the sun beams happily, the neighbor says 'hi'.  You made it outside.  Life is good.</li>";}
           break;
         case "s":
@@ -123,13 +123,13 @@ function update(event) {
           kitchen();
           break;
         case "x fridge":
-          message.innerHTML += "<li>Your fridge is looking a little low.  All you have left to eat is celery and jelly.</li>";
+          message.innerHTML += "<li>Your fridge is looking a little empty.  All you have left to eat is celery and jelly.</li>";
           break;
         case "x trash":
-          message.innerHTML += "<li>You walk over to your trashcan, and immediately regret it.  You resolve to take you trash out.  But not right now.</li>";
+          message.innerHTML += "<li>You walk over to your trash can, and immediately regret it.  You resolve to take you trash out.  But not right now.</li>";
           break;
         case "x cabinets":
-          if (scissors==true){message.innerHTML += "<li>You use the scissors to cut that stupid child lock off.  And you triumphantly grab a knife!</li>"; knife=true;}
+          if (scissors==true){message.innerHTML += "<li>You use the scissors to cut that stupid child lock off.  And you triumphantly grab a knife!  You consider using your sharp tools to make a sweet pair of ripped jeans.</li>"; knife=true;}
           else {message.innerHTML += "<li>You try to reach into the cabinet where you store everything.  From knives to bowls, it's all there.  For some reason it won't open.  You realize that when you mom came over last week, she put a child lock on it!  Better take care of that...stupid child lock.</li>";}
           break;
         case "w":
@@ -173,5 +173,5 @@ function kitchen() {
   room = 4;
   player.style.top = "7.5em";
   player.style.left = "17.25em";
-  message.innerHTML += "<li>You enter your kitchen.  You see the fridge, you cabinets, and a trash can.</li>"
+  message.innerHTML += "<li>You enter your kitchen.  You see the fridge, you cabinets, and the trash.</li>"
 }
