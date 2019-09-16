@@ -20,9 +20,9 @@ body {
   height: 300px;
 }
 #avatar {
-  position: fixed;
-  top: 5%;
-  left: 8.5%;
+  position: relative;
+  top: 2.5em;
+  left: 8em;
   width: 1em;
 }
 p {
